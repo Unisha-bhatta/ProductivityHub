@@ -26,7 +26,7 @@
 
 The entire app runs in the browser with zero build tools, zero frameworks, and zero dependencies. Data persists across sessions using the browser's `localStorage` API.
 
-This project was built as a real-world frontend exercise demonstrating SPA architecture, API integration, drag-and-drop interaction, responsive design, and a professional design system — all from scratch.
+This project was built as a real-world frontend exercise demonstrating SPA architecture, API integration, drag-and-drop interaction, responsive design, and a professional design system.
 
 ---
 
