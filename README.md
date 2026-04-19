@@ -1,6 +1,6 @@
 # ◈ ProductivityHub
 
-> A personal productivity dashboard — task management, real-time weather, and user authentication. Built with pure HTML, CSS, and JavaScript. No frameworks. No dependencies.
+> A personal productivity dashboard for task management, real-time weather, and user authentication. Built with pure HTML, CSS, and JavaScript. No frameworks. No dependencies.
 
 
 ## Table of Contents
