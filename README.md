@@ -37,7 +37,7 @@ This project was built as a real-world frontend exercise demonstrating SPA archi
 - Real-time field validation (name, email format, password length, confirm match)
 - Password strength meter with 5 levels: Very Weak → Very Strong
 - Show / hide password toggle on all password fields
-- Session persistence — users stay logged in after page refresh
+- Session persistence : users stay logged in after page refresh
 
 ### Task Manager
 - Add tasks with a priority level: 🔴 High, 🟡 Medium, 🟢 Low
@@ -64,29 +64,6 @@ This project was built as a real-world frontend exercise demonstrating SPA archi
 - Quick-add task form
 - Recent tasks list (latest 5)
 - Mini weather widget with link to full weather tab
-
----
-
-## Project Structure
-
-```
-productivity-hub/
-│
-├── index.html          # App shell — all HTML sections and templates
-├── style.css           # Design system — tokens, layout, components, responsive
-├── script.js           # All logic — Auth, Tasks, Weather, Dashboard modules
-└── README.md           # Project documentation
-```
-
-Each module in `script.js` is clearly separated with section comments:
-
-```
-// AUTH MODULE
-// DASHBOARD MODULE
-// TASKS MODULE
-// WEATHER MODULE
-// UTILITIES
-```
 
 ---
 
@@ -140,5 +117,3 @@ The visual design is built on a set of CSS custom properties (tokens) defined in
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE) — free to use, modify, and distribute with attribution.
-
----
