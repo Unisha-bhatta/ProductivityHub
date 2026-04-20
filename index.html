@@ -13,25 +13,149 @@
 
   <!-- ───────────── AUTH SCREEN ───────────── -->
   <div id="auth-screen" class="screen active">
-    <!-- Auth content coming in Phase 2 -->
+
     <div class="auth-bg">
       <div class="auth-orb orb-1"></div>
       <div class="auth-orb orb-2"></div>
       <div class="auth-orb orb-3"></div>
     </div>
+
     <div class="auth-card">
+
+      <!-- Logo -->
       <div class="auth-logo">
         <span class="logo-icon">◈</span>
         <span class="logo-text">ProductivityHub</span>
       </div>
-      <p class="coming-soon">Authentication module — coming Phase 2</p>
+
+      <!-- Tab Toggle -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-login">Sign In</button>
+        <button class="auth-tab" id="tab-signup">Sign Up</button>
+      </div>
+
+      <!-- ── Sign In Form ── -->
+      <form id="login-form" class="auth-form" novalidate>
+
+        <div class="field-group">
+          <label for="login-email">Email</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="you@email.com"
+            autocomplete="email"
+          >
+          <small class="field-error" id="login-email-error"></small>
+        </div>
+
+        <div class="field-group">
+          <label for="login-password">Password</label>
+          <div class="password-wrap">
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+            >
+            <button type="button" class="pw-toggle" aria-label="Show password">
+              <!-- Eye icon -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+          <small class="field-error" id="login-password-error"></small>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span class="btn-label">Sign In</span>
+        </button>
+
+        <p class="auth-hint">Demo: any valid email + password (6+ chars)</p>
+
+      </form>
+
+      <!-- ── Sign Up Form ── -->
+      <form id="signup-form" class="auth-form hidden" novalidate>
+
+        <div class="field-group">
+          <label for="signup-name">Full Name</label>
+          <input
+            type="text"
+            id="signup-name"
+            placeholder="Your full name"
+            autocomplete="name"
+          >
+          <small class="field-error" id="signup-name-error"></small>
+        </div>
+
+        <div class="field-group">
+          <label for="signup-email">Email</label>
+          <input
+            type="email"
+            id="signup-email"
+            placeholder="you@email.com"
+            autocomplete="email"
+          >
+          <small class="field-error" id="signup-email-error"></small>
+        </div>
+
+        <div class="field-group">
+          <label for="signup-password">Password</label>
+          <div class="password-wrap">
+            <input
+              type="password"
+              id="signup-password"
+              placeholder="Min 6 characters"
+              autocomplete="new-password"
+            >
+            <button type="button" class="pw-toggle" aria-label="Show password">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+          <!-- Password strength bar -->
+          <div class="pw-strength">
+            <div class="pw-bar" id="pw-bar"></div>
+          </div>
+          <small class="pw-hint" id="pw-hint"></small>
+          <small class="field-error" id="signup-password-error"></small>
+        </div>
+
+        <div class="field-group">
+          <label for="signup-confirm">Confirm Password</label>
+          <div class="password-wrap">
+            <input
+              type="password"
+              id="signup-confirm"
+              placeholder="Repeat your password"
+              autocomplete="new-password"
+            >
+            <button type="button" class="pw-toggle" aria-label="Show password">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+          <small class="field-error" id="signup-confirm-error"></small>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span class="btn-label">Create Account</span>
+        </button>
+
+      </form>
+
     </div>
   </div>
 
   <!-- ───────────── DASHBOARD SCREEN ───────────── -->
   <div id="dashboard-screen" class="screen">
 
-    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-logo">
         <span class="logo-icon">◈</span>
@@ -53,20 +177,17 @@
       </nav>
       <div class="sidebar-footer">
         <div class="user-chip">
-          <div class="user-avatar">U</div>
-          <span class="user-name">User</span>
+          <div class="user-avatar" id="user-avatar">U</div>
+          <span class="user-name" id="user-name-display">User</span>
         </div>
       </div>
     </aside>
 
-    <!-- Main Content -->
     <main class="main-content">
-      <p class="coming-soon">Dashboard modules — coming Phase 3 onwards</p>
+      <p class="coming-soon">Dashboard coming in Phase 3 onwards</p>
     </main>
 
   </div>
-
-  <!-- script.js will be added in Phase 2 -->
 
 </body>
 </html>
