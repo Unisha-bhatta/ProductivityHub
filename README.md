@@ -12,7 +12,6 @@
 - [Tech Stack](#-tech-stack)
 - [Roadmap](#-roadmap)
 - [Design System](#-design-system)
-- [License](#-license)
 
 ---
 
@@ -113,7 +112,3 @@ The visual design is built on a set of CSS custom properties (tokens) defined in
 - Mobile-first responsive breakpoints at 900px, 700px, and 480px
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) — free to use, modify, and distribute with attribution.
